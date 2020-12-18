@@ -1,11 +1,13 @@
 ﻿using System;
-namespace _1._1._3
+
+namespace Problem1_1_3
 {
     public class StdIn : IStdIn
     {
         public string Prompt(string message)
         {
-            throw new NotImplementedException();
+            Console.WriteLine(message);
+            return Console.ReadLine();
         }
     }
 }

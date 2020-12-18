@@ -6,7 +6,4 @@
     <RootNamespace>_1._1._3</RootNamespace>
   </PropertyGroup>
 
-  <ItemGroup>
-    <PackageReference Include="Moq" Version="4.15.2" />
-  </ItemGroup>
 </Project>

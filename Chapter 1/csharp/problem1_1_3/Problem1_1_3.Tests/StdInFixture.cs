@@ -2,7 +2,7 @@
 using System.IO;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
-namespace _1._1._3.Tests
+namespace Problem1_1_3.Tests
 {
     [TestClass]
     [TestCategory("Unit")]

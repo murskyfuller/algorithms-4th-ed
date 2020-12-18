@@ -1,5 +1,5 @@
 import unittest
-from main import are_equal
+from problem1_1_3.main import are_equal
 
 
 class TestAreEqual(unittest.TestCase):
@@ -8,7 +8,7 @@ class TestAreEqual(unittest.TestCase):
         self.assertFalse(are_equal(1, 2, 2))
 
     def test_are_equal_true(self):
-        self.assertFalse((are_equal(2, 2, 2)))
+        self.assertTrue((are_equal(2, 2, 2)))
 
 
 if __name__ == '__main__':

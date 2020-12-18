@@ -1,4 +1,4 @@
-﻿namespace _1._1._3
+﻿namespace Problem1_1_3
 {
     public interface IStdIn
     {
