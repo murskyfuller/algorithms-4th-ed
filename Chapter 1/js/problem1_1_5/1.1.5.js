@@ -5,7 +5,7 @@
  * @returns {boolean} True if all provided values are strictly between 0 and 1, otherwise false.
  */
 function solution(...args) {
-  throw new Error('Not implemented')
+  return args.every((v) => v > 0 && v < 1)
 }
 
 module.exports = solution
