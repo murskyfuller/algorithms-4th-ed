@@ -5,7 +5,7 @@
  * @returns {bool} True if the first argument is evenly divisible by the second, otherwise false.
  */
 function isDivisibleBy(n, divisor) {
-  throw new Error('Not implemented')
+  return n % divisor === 0
 }
 
 /**
@@ -14,7 +14,13 @@ function isDivisibleBy(n, divisor) {
  * @returns {string} The binary string representation of the provided integer.
  */
 function binaryString(n) {
-  throw new Error('Not implemented')
+  let result = ''
+
+  // Build the string by check each binary position's even-odd property.
+  for (let i = n; i > 0; i = Math.floor(i / 2))
+    result = `${isDivisibleBy(i, 2) ? '0' : '1'}${result}`
+
+  return result
 }
 
 module.exports = { solution: binaryString, isDivisibleBy }

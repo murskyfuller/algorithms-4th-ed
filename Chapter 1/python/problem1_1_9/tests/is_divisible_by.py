@@ -11,7 +11,7 @@ class TestIsDivisibleBy(unittest.TestCase):
         self.assertFalse(is_divisible_by(3, 2))
 
     def test_returns_true_for_9_3(self):
-        self.assertFalse(is_divisible_by(9, 3))
+        self.assertTrue(is_divisible_by(9, 3))
 
     def _test_returns_false_for_9_4(self):
         self.assertFalse(is_divisible_by(9, 4))

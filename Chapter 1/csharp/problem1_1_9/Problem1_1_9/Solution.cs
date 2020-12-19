@@ -12,7 +12,7 @@ namespace Problem1_1_9
         /// <returns>True if the first argument is evenly divisible by the second, otherwise returns false.</returns>
         public bool IsDivisibleBy(int n, int divisor)
         {
-            throw new NotImplementedException();
+            return n % divisor == 0;
         }
 
         /// <summary>
@@ -22,7 +22,13 @@ namespace Problem1_1_9
         /// <returns>The binary string representation of the provided integer.</returns>
         public string Execute(int n)
         {
-            throw new NotImplementedException();
+            var result = "";
+
+            // Build the string by check each binary position's even-odd property.
+            for (var i = n; i > 0; i /= 2)
+                result = $"{(IsDivisibleBy(i, 2) ? "0" : "1")}{result}";
+
+            return result;
         }
     }
 }
