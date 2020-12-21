@@ -17,7 +17,7 @@ namespace Problem1_1_11
         /// <param name="arrayToConvert"></param>
         public void Execute(bool[][] arrayToConvert)
         {
-            throw new NotImplementedException();
+            Console.Write(_converter.TwoDimenionsalArrayToString(arrayToConvert));
         }
     }
 }
